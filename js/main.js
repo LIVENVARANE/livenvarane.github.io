@@ -62,9 +62,12 @@ function randomColor() {
     }
 
     document.body.style.backgroundColor = UIColor;
+    document.getElementById("hbpp-imagecontainer1").style.backgroundColor = UIColor;
 
     document.getElementById("ui-logo").setAttribute("src", "assets/logos/" + UILogo + "")
 
+    document.getElementById("hb-title").style.color = UIColor;
+    document.getElementById("hb-title2").style.color = UIColor;
     document.getElementById("home-socialmedia1").style.color = UIColor;
     document.getElementById("home-socialmedia2").style.color = UIColor;
     document.getElementById("home-socialmedia3").style.color = UIColor;
