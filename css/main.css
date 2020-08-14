@@ -106,3 +106,70 @@ html, body {
 .header-frame .header-right a:hover {
     border-bottom: rgba(47, 54, 64, 1) 1px solid;
 }
+
+/* NAVBAR HERE */
+
+.navbar {
+    width: 400;
+    height: calc(100% - 80px);
+    background: linear-gradient(90deg, rgba(226,226,226,1) 0%, rgba(235,235,235,1) 44%, rgba(238,238,238,1) 100%);
+    position: absolute;
+    top: 80;
+    left: 0;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.navbar .nb-item {
+    display: block;
+    text-align: left;
+    height: 40;
+    padding-left: 30;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: none;
+
+    transition: ease 0.3s background-color;
+}
+
+.navbar .nb-item:hover {
+    background-color: #dbdbdb;
+}
+
+.navbar .nb-item span {
+    margin-right: 30;
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    text-align: right;
+    position: relative;
+    top: -38;
+}
+
+.navbar-display {
+    height: calc(100% - 80px);
+    width: calc(100% - 400px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.navbar-display .nd-title {
+    margin: 30 0 0 100;
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 50px;
+}
+
+.navbar-display p {
+    margin-left: 80;
+}
+
+.navbar-display a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}

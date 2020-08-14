@@ -61,9 +61,26 @@ function randomColor() {
             break;
     }
 
-    document.body.style.backgroundColor = UIColor;
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
 
-    document.getElementById("ui-logo").setAttribute("src", "assets/logos/" + UILogo + "")
+    if(page != "otherprojects.html") {
+        document.body.style.backgroundColor = UIColor;
+    }
+    else {
+        document.getElementById("op-navbar").style.color = UIColor;
+        const ndTitleClass = document.querySelectorAll('.nd-title');
+        ndTitleClass.forEach(element => {
+            element.style.color = UIColor;
+        });
+
+        const ndAClass = document.querySelectorAll('#nd-a');
+        ndAClass.forEach(element => {
+            element.style.color = UIColor;
+        });
+    }
+
+    document.getElementById("ui-logo").setAttribute("src", "assets/logos/" + UILogo)
 
     document.getElementById("home-socialmedia1").style.color = UIColor;
     document.getElementById("home-socialmedia2").style.color = UIColor;

@@ -7,11 +7,12 @@
         <link rel="stylesheet" href="css\main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <script src="js/main.js"></script>
+        <script src="js/otherprojects.js"></script>
     </head>
     <body onload="randomColor()">
         <header>
             <div class="header-frame" id="header-frame">
-                <div onclick='linkTo("index.html", "here")' class="header-logo"><div class="header-title" id="header-name">Liven</div></div>
+                <div onclick='linkTo("index.html", "here")' class="header-logo"><div class="header-title" id="header-name">Other Projects</div></div>
                 <div class="header-right">
                     <a href="otherprojects.html" id="header-buttons2">Other Projects</a>
                     <a href="graphicwork.html" id="header-buttons1">Graphic Work</a>
@@ -20,7 +21,61 @@
                 </div>
             </div>
         </header>
-        <div style="position: relative; top: 20%; color: white; font-size: 100px; font-family: 'Ubuntu', sans-serif; text-align: center;">Still WIP!</div>
-        <div style="position: relative; top: 22%; color: white; font-size: 30px; font-family: 'Ubuntu', sans-serif; text-align: center;">Please check back later :)</div>
+        <div class="navbar" id="op-navbar">
+            <div class="nb-item" id="nb-item1" onclick='otherProjectsNavbarSelect("nb-item1")' style="border-radius: 0px 10px 0px 10px;">BasicDockHider<span>iOS Tweak</span></div>
+            <div class="nb-item" id="nb-item2" onclick='otherProjectsNavbarSelect("nb-item2")'>Burgar King<span>iOS Theme</span></div>
+            <div class="nb-item" id="nb-item3" onclick='otherProjectsNavbarSelect("nb-item3")'>Emer<span>iOS Tweak</span></div>
+            <div class="nb-item" id="nb-item4" onclick='otherProjectsNavbarSelect("nb-item4")'>ETHSwitcher<span>Desktop Apps</span></div>
+            <div class="nb-item" id="nb-item5" onclick='otherProjectsNavbarSelect("nb-item5")'>HapticSystem<span>iOS Tweak</span></div>
+            <div class="nb-item" id="nb-item6" onclick='otherProjectsNavbarSelect("nb-item6")'>LIG<span>Desktop App</span></div>
+            <div class="nb-item" id="nb-item7" onclick='otherProjectsNavbarSelect("nb-item7")'>SlashSlash<span>iOS Widget</span></div>
+            <div class="nb-item" id="nb-item8" onclick='otherProjectsNavbarSelect("nb-item8")'>Sowy<span>iOS Theme</span></div>
+            <div class="nb-item" id="nb-item9" onclick='otherProjectsNavbarSelect("nb-item9")'><i>Ultima Project</i><span>Minecraft Network</span></div>
+            <div class="nb-item" id="nb-item10" onclick='otherProjectsNavbarSelect("nb-item10")'>Veddy<span>iOS Theme</span></div>
+            <div class="nb-item" id="nb-item11" onclick='otherProjectsNavbarSelect("nb-item11")'>WazeDecoy<span>Program</span></div>
+            <div class="nb-item" id="nb-item12" onclick='otherProjectsNavbarSelect("nb-item12")'>WhatsUp<span>iOS Tweak</span></div>
+        </div>
+        <div class="navbar-display">
+            <div id="BasicDockHider" style="position: absolute; visibility: hidden;">
+                <div class="nd-title">BasicDockHider</div>
+                <p>It's my first tweak that really came on a repo! Of course it is not really complicated but when you need a tweak to do that, it's cool :)</p>
+                <p>If you did not understood by the title, this tweak is allowing users to hide their dock background or precisely its opacity.</p>
+                <p>You can get it on the Twickd repo: https://repo.twickd.com (<u><a id="nd-a" href="https://repo.twickd.com/package/com.twickd.liven.basicdockhider" target="_blank">Tweak page</a></u>)</p>
+                <img src="assets/projects/bdh/show1.jpeg" style="margin-left: 80; border-radius: 10px; width: 280px;" /><img src="assets/projects/bdh/show2.jpeg" style="margin-left: 40; border-radius: 10px; width: 280px;" /><img src="assets/projects/bdh/show3.jpeg" style="margin-left: 40; border-radius: 10px; width: 280px;" />
+            </div>
+            <div id="BurgarKing" style="position: absolute; visibility: hidden;">
+                <div class="nd-title">Burgar King</div>
+                <p>This is a theme is never released, might (a day) rework on it and release it.</p>
+                <p>Basically, it is a theme that changes every icon to a Burger King icon with the "Burger King" text changed to the app name</p>
+                <p>It is close to be released, I only have to finish the Calendar icon (but for that I have to create a font idk for now because the day and date aren't static).</p>
+                <br />
+                <p>For now, no screenshots!</p>
+            </div>
+            <div id="Emer" style="position: absolute; visibility: hidden;">
+                <div class="nd-title">Emer</div>
+                <p>Ouuu, this is <b>HOT</b>, real <b>HOT</b>, but It's a secret :) I can only tell you that it's free, and it's a <span style="font-size: 26px; font-weight: bold;">BIG BOI</span>, stay tuned!</p>
+                <p>eta s0n</p>
+            </div>
+            <div id="ETHSwitcher" style="position: absolute; visibility: hidden;">
+                <div class="nd-title">ETHSwitcher</div>
+                <p>It's a desktop app that I made on Java and C#, it's only made for my personal use BUT it's open source, so you can modify it to make it YOURS :)</p>
+                <p>What it does ? It's real simple but it can be useful if you have to switch between personal hotspot and your network a lot, for instance<br />It disables and enables your interfaces to make you switch from network A to network B.<br />This can be a very big app but I only made it so it responds to what I want it to do<p></p>
+                <p>Might make a configurable public version, but it would be more on C#. A <span style="font-weight: bold; font-size: 26px;">BIG</span> hot one.</p>
+            </div>
+            <div id="HapticSystem" style="position: absolute; visibility: hidden;">
+                <div class="nd-title">HapticSystem</div>
+                <p><i style="font-size: 24px;" class="fas fa-sad-tear"></i> I will never release this one on a big repo, why ? Just found out that it has already been made. Check <a id="nd-a" target="_blank" href="https://repo.litten.love/depictions/rse/">Litten's Rose tweak</a> on her repo: https://repo.litten.love</p>
+                <p>Everything was made so I can release it s0n but no, if you still want it: Yes! I will give you the .deb, just ask me on <a id="nd-a" href="https://twitter.com/LivenOff"><i style="color: #00acee;" class="fab fa-twitter"></i> <u>@LivenOff</a></u> !</p>
+                
+            </div>
+            <div id="Error" style="position: absolute; visibility: hidden;">
+                <div class="nd-title">Error</div>
+                <p>Oops, I think I messed up that one, please contact me at <a id="nd-a" href="https://twitter.com/LivenOff"><i style="color: #00acee;" class="fab fa-twitter"></i> <u>@LivenOff</a></u> and tell me that I am stupid and I forgot to link a navbar item to my navbar display, Thanks!</p>
+            </div>
+            <div id="Select" style="position: absolute;">
+                <div class="nd-title">Hey there!</div>
+                <p>Please select a category, it's cold out there.</p>
+            </div>
+        </div>
     </body>
 </html>
