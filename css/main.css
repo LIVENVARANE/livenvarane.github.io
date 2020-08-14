@@ -151,6 +151,7 @@ html, body {
 }
 
 .navbar-display {
+    overflow-y: auto;
     height: calc(100% - 80px);
     width: calc(100% - 400px);
     position: absolute;
