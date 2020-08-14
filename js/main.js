@@ -63,9 +63,6 @@ function randomColor() {
 
     var path = window.location.pathname;
     var page = path.split("/").pop();
-    document.body.style.backgroundColor = UIColor;
-    document.getElementById("hbpp-imagecontainer1").style.backgroundColor = UIColor;
-
     if(page != "otherprojects.html") {
         document.body.style.backgroundColor = UIColor;
     }
