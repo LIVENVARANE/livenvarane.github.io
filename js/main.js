@@ -63,6 +63,8 @@ function randomColor() {
 
     var path = window.location.pathname;
     var page = path.split("/").pop();
+    document.body.style.backgroundColor = UIColor;
+    document.getElementById("hbpp-imagecontainer1").style.backgroundColor = UIColor;
 
     if(page != "otherprojects.html") {
         document.body.style.backgroundColor = UIColor;
@@ -82,6 +84,8 @@ function randomColor() {
 
     document.getElementById("ui-logo").setAttribute("src", "assets/logos/" + UILogo)
 
+    document.getElementById("hb-title").style.color = UIColor;
+    document.getElementById("hb-title2").style.color = UIColor;
     document.getElementById("home-socialmedia1").style.color = UIColor;
     document.getElementById("home-socialmedia2").style.color = UIColor;
     document.getElementById("home-socialmedia3").style.color = UIColor;
