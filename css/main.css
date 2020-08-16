@@ -24,7 +24,7 @@ html, body {
     background-color: white;
     width: 100%;
     height: 80px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
@@ -116,14 +116,14 @@ html, body {
     position: absolute;
     top: 80;
     left: 0;
-    border-radius: 0px 10px 0px 10px;
+    border-radius: 0px 10px 0px 0px;
 }
 
 .navbar .nb-item {
     display: block;
     text-align: left;
     height: 40;
-    padding-left: 30;
+    padding-left: 45;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     line-height: 40px;
@@ -132,6 +132,18 @@ html, body {
     background-color: none;
 
     transition: ease 0.3s background-color;
+}
+
+.navbar .nb-item img {
+    width: 30;
+    position: relative;
+    top: -76;
+    left: -35;
+}
+
+.navbar .nb-item .nbi-up {
+    position: relative;
+    top: -0;
 }
 
 .navbar .nb-item:hover {
@@ -151,7 +163,6 @@ html, body {
 }
 
 .navbar-display {
-    overflow-y: auto;
     height: calc(100% - 80px);
     width: calc(100% - 400px);
     position: absolute;
@@ -159,14 +170,26 @@ html, body {
     bottom: 0;
 }
 
+.navbar-display .nd-item {
+    overflow-y: auto;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    padding: 50;
+}
+
 .navbar-display .nd-title {
-    margin: 30 0 0 100;
     font-family: 'Coolvetica', sans-serif;
     font-size: 50px;
 }
 
-.navbar-display p {
-    margin-left: 80;
+.navbar-display img {
+    cursor: pointer;
+    margin-top: 30;
+    margin-right: 40;
 }
 
 .navbar-display a {
