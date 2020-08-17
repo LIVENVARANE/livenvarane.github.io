@@ -68,6 +68,7 @@ html, body {
     font-family: 'Coolvetica', sans-serif;
     font-size: 34px;
     color: #2f3640;
+
     transition: 0.5s ease box-shadow;
 
     animation-name: enter-anim;
@@ -105,6 +106,89 @@ html, body {
 
 .header-frame .header-right a:hover {
     border-bottom: rgba(47, 54, 64, 1) 1px solid;
+}
+
+.header-frame .header-right i {
+    float: right;
+    visibility: hidden;
+    font-size: 30;
+    color: #2f3640;
+    cursor: pointer;
+}
+
+.mobilemenu {
+    visibility: hidden;
+    background-color: #2f3640;
+    position: absolute;
+    width: 100%;
+    height: 300;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0.8;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    font-family: 'Coolvetica', sans-serif;
+}
+
+.mobilemenu .mm-title {
+    color: white;
+    margin-left: 30;
+    position: relative;
+    top: 26;
+    font-size: 24px;
+}
+
+.mobilemenu i {
+    color: white;
+    position: absolute;
+    right: 30;
+    font-size: 30;
+}
+
+.mobilemenu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 21;
+    margin-left: 30;
+    margin-top: 10;
+}
+
+@media only screen and (max-width: 1220px) {
+    .header-frame .header-right a {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .header-frame .header-logo .header-title {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .header-frame .header-right a {
+        margin-left: 30;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .header-frame .header-right a {
+        visibility: hidden;
+    }
+
+    .header-frame .header-right i {
+        visibility: visible;
+    }
+
+    .header-frame .header-logo {
+        margin-left: 20;
+    }
+
+    @keyframes enter-anim {
+        0% { opacity: 0; margin-left: 35; }
+        100% { opacity: 1; margin-left: 20; }
+    }
 }
 
 /* NAVBAR HERE */
@@ -196,4 +280,29 @@ html, body {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 770px) {
+    .navbar {
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        height: fit-content;
+        margin-bottom: 50;
+        z-index: 1;
+    }
+
+    .navbar-display {
+        position: unset;
+        height: 500px;
+        width: 100%;
+    }
+
+    .navbar-display .nd-item {
+        overflow-y: hidden;
+        height: unset;
+        left: 0;
+        right: unset;
+        bottom: unset;
+    }
 }

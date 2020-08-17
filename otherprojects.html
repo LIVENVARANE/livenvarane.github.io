@@ -10,10 +10,18 @@
         <script src="js/otherprojects.js"></script>
     </head>
     <body onload="randomColor()">
+        <div class="mobilemenu" id="mobilemenu">
+            <div class="mm-title">Other Projects</div><i class="fas fa-times" onclick="mobileBurger()"></i>
+            <a href="index.html" style="margin-top: 65;">Home</a>
+            <a href="jbhub.html">Jailbreak Hub</a>
+            <a href="graphicwork.html">Graphic Work</a>
+            <a href="otherprojects.html">Other Projects</a>
+        </div>
         <header>
             <div class="header-frame" id="header-frame">
                 <div onclick='linkTo("index.html", "here")' class="header-logo"><div class="header-title" id="header-name">Other Projects</div></div>
                 <div class="header-right">
+                    <i class="fas fa-bars" id="h-burger" onclick="mobileBurger()"></i>
                     <a href="otherprojects.html" id="header-buttons2">Other Projects</a>
                     <a href="graphicwork.html" id="header-buttons1">Graphic Work</a>
                     <a href="jbhub.html" id="header-buttons3">Jailbreak Hub</a>
@@ -29,7 +37,7 @@
             <div class="nb-item" id="nb-item5" onclick='otherProjectsNavbarSelect("nb-item5")'>HapticSystem<span>iOS Tweak</span><img src="assets/projects/HapticSystem/icon.png" /></div>
             <div class="nb-item" id="nb-item6" onclick='otherProjectsNavbarSelect("nb-item6")'>LIG<span>Desktop App</span><img src="assets/projects/LIG/icon.png" /></div>
             <div class="nb-item" id="nb-item7" onclick='otherProjectsNavbarSelect("nb-item7")'>SlashSlash<span>iOS Widget</span><img src="assets/projects/SlashSlash/icon.png" /></div>
-            <div class="nb-item" id="nb-item8" onclick='otherProjectsNavbarSelect("nb-item8")'>Sowy<span>iOS Theme</span></div>
+            <div class="nb-item" id="nb-item8" onclick='otherProjectsNavbarSelect("nb-item8")'>Sowy<span>iOS Theme</span><img src="assets/projects/Sowy/icon.png" /></div>
             <div class="nb-item" id="nb-item9" onclick='otherProjectsNavbarSelect("nb-item9")'><i>Project Ultima2</i><span>Minecraft Network</span><img src="assets/projects/Ultima/icon.png" /></div>
             <div class="nb-item" id="nb-item10" onclick='otherProjectsNavbarSelect("nb-item10")'>Veddy<span>iOS Theme</span><img src="assets/projects/Veddy/icon.png" /></div>
             <div class="nb-item" id="nb-item11" onclick='otherProjectsNavbarSelect("nb-item11")'>WazeDecoy<span>Web Server Program</span><img src="assets/projects/nologo.png" /></div>
@@ -74,6 +82,7 @@
                 <p>or Liven Icon Generator, should be more Resizer but <u>it is what it is</u></p>
                 <p>It's a Java app that was made to simplify iOS icon resizing, with LIG, you can resize your icons to @3x, @2x, ~ipad etc<br />For now the project is on hold but I will soon restart working on it to add customizable resolution for custom prefixes etc</p>
                 <p>That way you can rename potato.png (512px) into potatoLITTLE (128px) & potatoCATCEN.png (400px) if you want, even if it's stupid.</p>
+                <img src="assets/projects/LIG/show.jpg" onclick='linkTo("assets/projects/LIG/show.jpg", "newpage")' style="width: 400;" />
             </div>
             <div id="SlashSlash" class="nd-item">
                 <div class="nd-title">SlashSlash</div>

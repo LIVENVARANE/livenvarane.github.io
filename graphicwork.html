@@ -11,10 +11,18 @@
         <script src="js/portfolio.js"></script>
     </head>
     <body>
+        <div class="mobilemenu" id="mobilemenu">
+            <div class="mm-title">Graphic Work</div><i class="fas fa-times" onclick="mobileBurger()"></i>
+            <a href="index.html" style="margin-top: 65;">Home</a>
+            <a href="jbhub.html">Jailbreak Hub</a>
+            <a href="graphicwork.html">Graphic Work</a>
+            <a href="otherprojects.html">Other Projects</a>
+        </div>
         <header>
             <div class="header-frame" id="header-frame">
-                <div onclick='linkTo("index.html", "here")' class="header-logo"><div class="header-title" id="header-name">Liven</div></div>
+                <div onclick='linkTo("index.html", "here")' class="header-logo"><div class="header-title" id="header-name">Graphic Work</div></div>
                 <div class="header-right">
+                    <i class="fas fa-bars" id="h-burger" onclick="mobileBurger()"></i>
                     <a href="otherprojects.html" id="header-buttons2">Other Projects</a>
                     <a href="graphicwork.html" id="header-buttons1">Graphic Work</a>
                     <a href="jbhub.html" id="header-buttons3">Jailbreak Hub</a>

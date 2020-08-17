@@ -98,3 +98,16 @@ function linkTo(page, where) {
         window.open(page, '_blank');
     }
 }
+
+function mobileBurger() {
+    var burger = document.getElementById("h-burger");
+    var mm = document.getElementById("mobilemenu");
+    if(burger.style.visibility == "hidden") { //show mm
+        mm.style.visibility = "hidden";
+        burger.style.visibility = "visible";
+    }
+    else {
+        burger.style.visibility = "hidden";
+        mm.style.visibility = "visible";
+    }
+}
