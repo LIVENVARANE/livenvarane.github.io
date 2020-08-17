@@ -143,6 +143,7 @@ html, body {
     position: absolute;
     right: 30;
     font-size: 30;
+    cursor: pointer;
 }
 
 .mobilemenu a {
