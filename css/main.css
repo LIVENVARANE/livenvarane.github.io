@@ -37,7 +37,7 @@ html, body {
     height: 100%;
     width: max-content;
     margin-left: 70;
-    cursor: default;
+    cursor: pointer;
     position: relative;
     top: 5;
 
