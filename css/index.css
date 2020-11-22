@@ -1,3 +1,15 @@
+#ui-logo {
+    position: absolute;
+    z-index: -1;
+    height: 500px;
+    top: 15px;
+    left: -100px;
+    margin-bottom: -45;
+    animation-name: ui-logo-enter;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+}
+
 @keyframes ui-logo-enter {
     0% { opacity: 0; left: -110; }
     100% { opacity: 1; left: -100; }
@@ -6,96 +18,68 @@
 .home-block {
     position: absolute;
     width: 100%;
-    height: 700;
+    top: 455px;
     background-color: white;
-    left: 0;
 }
 
-.home-block .hb-title {
-    font-family: 'Coolvetica', sans-serif;
-    font-size: 78px;
+.home-block .hb-container {
+    width: 100%;
 }
 
-.home-block .hb-title .hb-titleacc {
-    opacity: 0.7;
-    font-size: 28px;
-    display: inline;
-    margin-left: 30px;
-    margin-right: 30px;
+.home-block .hb-left {
+    float: left;
+    width: 60%;
+    height: calc(100vh - 445px);
 }
 
-.home-block .hb-text {
-    font-family: 'Coolvetica', sans-serif;
-    font-size: 22px;
-    text-align: center;
-    padding: 20px;
-    margin-top: 15px;
+.home-block .hbl-titleimg {
+    width: 50%;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 30px 0px 20px 0px;
+    display: block;
 }
 
-.home-block .hb-projectslideshow {
-    height: 350;
-    padding: 20 100 0 100;
-}
-.home-block .hb-projectslideshow .hbp-projectcontainer {
-    height: 230;
-    width: 400;
-}
-
-.home-block .hb-projectslideshow .hbp-projectcontainer .hbpp-title {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 32px;
-    color: black;
-    text-align: center;
-    position: relative;
-    top: 15;
-}
-
-.home-block .hb-projectslideshow .hbp-projectcontainer .hbpp-title span {
-    font-size: 16px;
-    position: relative;
-    top: 20;
-}
-
-.home-block .hb-projectslideshow .hbp-projectcontainer .hbpp-imagecontainer {
-    height: 180;
-    width: 400;
-    border-radius: 10px;
-    position: relative;
-    top: 50;
+.home-block .hbl-img {
+    margin: 20px 0px 20px 0px;
+    width: 70%;
+    max-width: 500px;
+    display: block;
     cursor: pointer;
-
-    transition-duration: 0.5s;
+    position: relative;
+    top: 0px;
+    transition-duration: 0.2s;
     transition-timing-function: ease;
+    transition-property: top;
 }
 
-.home-block .hb-projectslideshow .hbp-projectcontainer .hbpp-imagecontainer:hover {
-    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.5);
+.home-block .hbl-img:hover {
+    top: -5px;
 }
 
-.home-block .hb-projectslideshow .hbp-projectcontainer .hbpp-imagecontainer img {
-    height: 170;
-    width: 390;
-    position: relative;
-    top: 5;
-    left: 5;
-    border-radius: 8px;
-    cursor: pointer;
+.home-block .hb-left p {
+    font-family: 'Mukta', sans-serif;
+    padding: 0px 30px 0px 30px;
+}
+
+.home-block .hb-right {
+    float: left;
+    width: 40%;
+    background-image: linear-gradient(to top, #ffffff, #f7f7f7, #eeeeee, #e6e6e6, #dedede);
 }
 
 .welcome-text {
     color: white;
     font-family: 'Coolvetica', sans-serif;
-    font-size: 85;
-    position: absolute;
-    top: 130;
-    left: 50%;
+    font-size: 85px;
+    position: relative;
+    top: 130px;
+    left: 35%;
     cursor: default;
     width: min-content;
 }
 
-.wt-span {
+.welcome-text .wt-span {
     animation-name: wt-enter;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -124,7 +108,6 @@
 .welcome-text .wt-subtitle {
     font-size: 32px;
     position: relative;
-    left: -25%;
     width: max-content;
     margin-top: 10px;
     opacity: 0;
@@ -142,26 +125,18 @@
     100% { margin-top: 10px; opacity: 1; }
 }
 
-.home-float {
-    float: right;
-    position: relative;
-    right: 50%;
-}
-
 .home-socialmedia {
-    position: relative;
     display: inline;
-    top: 370px;
-    right: -75%;
     opacity: 0;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     font-family: 'Coolvetica', sans-serif;
     font-size: 18px;
     color: white;
     background-color: white;
-    padding: 5 10 5 10;
+    padding: 5px 10px 5px 10px;
     border-radius: 5px;
+    cursor: pointer;
 
     animation-name: wt-sm-enter;
     animation-duration: 1s;
@@ -173,8 +148,8 @@
 }
 
 @keyframes wt-sm-enter {
-    0% { opacity: 0; top: 380px; }
-    100% { opacity: 1; top: 370px; }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .home-socialmedia i {
@@ -183,10 +158,56 @@
 
 .home-socialmedia a {
     text-decoration: none;
-    color: white;
     cursor: pointer;
 }
 
 .home-socialmedia:hover {
     border-radius: 8px;
+}
+
+@media only screen and (max-width: 1405px) {
+    .home-block .hb-right {
+        float: none;
+        margin-top: 50px;
+        width: 100%;
+        background-image: unset;
+        height: unset;
+    }
+
+    .home-block .hb-left {
+        float: none;
+        height: unset;
+        width: 100%;
+    }
+
+    .home-block .hb-left p {
+        font-size: 30px;
+    }
+
+    #ui-logo {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .welcome-text {
+        width: 100%;
+        left: 0px;
+        top: 170px;
+    }
+
+    .welcome-text .wt-subtitle {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .home-socialmedia {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .welcome-text .wt-span {
+        font-size: 56px;
+    }
 }
