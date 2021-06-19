@@ -36,6 +36,9 @@ function otherProjectsNavbarSelect(id) {
     } else if(value.includes("WhatsUp")) {
         hideAllProjectNavbarDisplays();
         document.getElementById("WhatsUp").style.visibility = "visible";
+    } else if(value.includes("ELB")) {
+        hideAllProjectNavbarDisplays();
+        document.getElementById("ELB").style.visibility = "visible";
     } else {
         hideAllProjectNavbarDisplays();
         document.getElementById("Error").style.visibility = "visible";
@@ -55,6 +58,7 @@ function hideAllProjectNavbarDisplays() {
     document.getElementById("Veddy").style.visibility = "hidden";
     document.getElementById("WazeDecoy").style.visibility = "hidden";
     document.getElementById("WhatsUp").style.visibility = "hidden";
+    document.getElementById("ELB").style.visibility = "hidden";
 
     document.getElementById("Error").style.visibility = "hidden";
     document.getElementById("Select").style.visibility = "hidden";
