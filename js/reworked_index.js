@@ -19,7 +19,6 @@ document.addEventListener('scroll', function() {
     const fifthItem = document.getElementById('iw-fifth');
     const sixthItem = document.getElementById('iw-sixth');
     const lvnLetter = document.getElementById('lvn-letter');
-    const scrollReminder = document.getElementById('scroll-reminder');
 
     //console.log(window.scrollY);
 
@@ -38,8 +37,6 @@ document.addEventListener('scroll', function() {
         thirdMedia.style.opacity = 0;
         franceWrapper.style.opacity = 0;
         lvnLetter.style.opacity = 0;
-
-        scrollReminder.removeAttribute('class');
 
         if(window.scrollY > 500) {
             bodyWrapper.style.transform = 'translateY(-' + ((window.scrollY - 500) / 12) + '%)';
@@ -71,7 +68,6 @@ document.addEventListener('scroll', function() {
         firstMedia.style.transform = 'translateX(-' + (10 - (window.scrollY - 1300) / 20) + 'px)';
 
         franceWrapper.style.opacity = 1;
-        scrollReminder.removeAttribute('class');
     } else if(window.scrollY <= 1700) { //1500 -> 1700 (200)
         firstHider.style.opacity = 0;
         secondHider.style.opacity = 1 - ((window.scrollY - 1500) / 200);
@@ -83,7 +79,6 @@ document.addEventListener('scroll', function() {
 
         franceWrapper.style.opacity = 1;
 
-        scrollReminder.removeAttribute('class');
     } else if(window.scrollY <= 1900) { //1700 -> 1900 (200)
         secondHider.style.opacity = 0;
         thirdHider.style.opacity = 1 - ((window.scrollY - 1700) / 200);
@@ -99,7 +94,6 @@ document.addEventListener('scroll', function() {
         bodyWrapper.style.opacity = 1;
         bodyWrapper.style.top = '50%';
 
-        scrollReminder.setAttribute('class', 'hide');
     } else {
         thirdHider.style.opacity = 0;
 
