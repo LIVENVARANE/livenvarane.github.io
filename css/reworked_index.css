@@ -1,0 +1,395 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    background-color: black !important;
+    color: white;
+    font-family: 'Nissan', sans-serif;
+}
+
+::-webkit-scrollbar {
+    background: black;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+header {
+    background-color: black;
+}
+
+header .usable-wrapper .right-panel {
+    background-color: black;
+}
+
+header .usable-wrapper .right-panel a {
+    color: #3c3c3c;
+}
+
+.content {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+.content h1 {
+    display: block;
+    position: relative;
+    top: calc(50% - 67px);
+    user-select: none;
+    text-align: center;
+    font-family: 'SFProDisplay', sans-serif;
+    /* background: linear-gradient(0deg, rgb(63 63 63) 0%, rgba(217,217,217,1) 100%); */
+    background: linear-gradient(0deg, rgb(0 0 0) 0%, rgba(217,217,217,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+
+    animation: title-enter 3s cubic-bezier(0.56, 0.01, 0.04, 0.99) 0.5s forwards;
+}
+
+@keyframes title-enter {
+    100% { opacity: 1; }
+}
+
+.content #body-wrapper {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+}
+
+.content #body-wrapper div {
+    position: relative;
+    width: calc(70% - 200px);
+    height: calc(100% - 200px);
+    padding: 100px;
+    background-color: #171717;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.content #body-wrapper div p {
+    text-align: justify;
+    color: #c6c6c6;
+    margin: 0px 0px 15px 0px;
+}
+
+.content #body-wrapper div p a {
+    color: unset;
+    transition: 0.3s ease color;
+}
+
+.content #body-wrapper div p a:hover {
+    color: white;
+}
+
+.content #body-wrapper div p a:active {
+    color: gray;
+}
+
+.content #body-wrapper div .bw {
+    position: absolute;
+    width: 33.34%;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.content #body-wrapper div #bw-first {
+    left: 0px;
+}
+
+.content #body-wrapper div #bw-second {
+    left: 33.34%;
+}
+
+.content #body-wrapper div #bw-third {
+    left: 66.68%;
+}
+
+.content #body-wrapper div i {
+    position: absolute;
+    top: 15px;
+    transform: translateX(-10px);
+    opacity: 0;
+    cursor: pointer;
+    color: black;
+    font-size: 14pt;
+    transition: 0.2s ease-out top;
+}
+
+.content #body-wrapper div i:hover {
+    top: 18px;
+}
+
+.content #body-wrapper div i#bwi-first {
+    right: 15px;
+}
+
+.content #body-wrapper div i#bwi-second {
+    right: 40px;
+}
+
+.content #body-wrapper div i#bwi-third {
+    right: 65px;
+}
+
+.content #body-wrapper div #france-wrapper {
+    position: absolute;
+    bottom: 40px;
+    top: unset;
+    height: 2px;
+    width: 50px;
+    left: calc(50% - 25px);
+    padding: 0px;
+    border-radius: 0px;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.content #body-wrapper div #france-wrapper div {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 33.34%;
+    height: 100%;
+    padding: 0px;
+    border-radius: 0px;
+    overflow: unset;
+}
+
+.content #body-wrapper div #france-wrapper div#fr-blue {
+    background-color: blue;
+}
+
+.content #body-wrapper div #france-wrapper div#fr-white {
+    background-color: white;
+    left: 33.34%;
+}
+
+.content #body-wrapper div #france-wrapper div#fr-red {
+    background-color: red;
+    left: 66.68%;
+}
+
+.content #pinned {
+    position: absolute;
+    top: calc(50% - 300px);
+    width: 100%;
+    text-align: center;
+    letter-spacing: 10px;
+    color: #d1d1d1;
+    cursor: default;
+    opacity: 0;
+    transition: 0.2s ease-in-out letter-spacing;
+}
+
+.content #pinned:hover {
+    letter-spacing: 10px !important;
+}
+
+.content .items-wrapper {
+    position: absolute;
+    left: 20%;
+    top: calc(50% - 250px);
+    width: 60%;
+    height: 60%;
+    z-index: -1;
+}
+
+.content .items-wrapper div {
+    height: 100%;
+    width: calc(50% - 40px);
+}
+
+.content .items-wrapper div.left {
+    float: left;
+    padding-right: 40px;
+}
+
+.content .items-wrapper div.right {
+    float: right;
+    padding-left: 40px;
+}
+
+.content .items-wrapper div div {
+    width: 100%;
+    max-width: 400px;
+    height: 120px;
+    right: 0px;
+    opacity: 0;
+    transform: rotate3d(25, 1, 4, 50deg);
+    background: linear-gradient(250deg, rgb(59 59 59) 0%, rgb(49 49 49) 100%);
+    border: 1px solid #3a3a3a;
+    margin: 45px 0px;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 17%) 0px -23px 25px 0px inset, rgb(0 0 0 / 15%) 0px -36px 30px 0px inset, rgb(0 0 0 / 10%) 0px -79px 40px 0px inset, rgb(0 0 0 / 6%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 8px, rgb(0 0 0 / 9%) 0px 32px 16px;
+    transition: 0.2s ease-out;
+}
+
+.content .items-wrapper div.right div:hover {
+    margin-left: 3px;
+}
+
+.content .items-wrapper div div img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
+    width: 80px;
+}
+
+.content .items-wrapper div div span {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    font-family: 'Codec Cold', sans-serif;
+    opacity: 0.6;
+}
+
+.content .items-wrapper div div h2 {
+    position: absolute;
+    left: 100px;
+    width: calc(100% - 110px);
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-family: 'SFProDisplay', sans-serif;
+}
+
+.content .items-wrapper div div h4 {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    text-align: left;
+    margin: 0px;
+    width: calc(100% - 110px);
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'SFProDisplay', sans-serif;
+}
+
+.content .items-wrapper div.left div:hover {
+    position: relative;
+    right: 3px;
+}
+
+.content #lvn-letter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s ease opacity;
+}
+
+.content #lvn-letter:hover {
+    filter: brightness(0.5);
+}
+
+.content #lvn-letter:active {
+    filter: brightness(0.3);
+}
+
+.content #scroll-reminder {
+    position: absolute;
+    bottom: 45px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Codec Cold', sans-serif;
+    color: rgb(59, 59, 59);
+    opacity: 0;
+
+    animation: scroll-enter 1s ease-out 4s forwards;
+}
+
+.content #scroll-reminder.hide {
+    opacity: 0 !important;
+}
+
+@keyframes scroll-enter {
+    100% { opacity: 1; bottom: 50px; }
+}
+
+.content-spacer {
+    width: 100%;
+    height: 9000px;
+}
+
+@media screen and (max-width: 900px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .content .items-wrapper {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .content .items-wrapper div {
+        width: 100%;
+        padding: 0px !important;
+    }
+
+    .content .items-wrapper div.left {
+        float: unset;
+        height: unset;
+    }
+
+    .content .items-wrapper div.right {
+        float: unset;
+    }
+
+    .content .items-wrapper div div {
+        max-width: unset;
+    }
+
+    .content .items-wrapper div div h2 {
+        font-size: 10pt;
+    }
+
+    .content .items-wrapper div div span {
+        font-size: 7pt;
+    }
+
+    .content .items-wrapper div div h4 {
+        font-size: 7pt;
+    }
+
+    .content #body-wrapper div {
+        padding: 40px;
+        height: unset;
+        border-radius: 0px;
+        width: calc(100% - 80px);
+    }
+
+    .content #body-wrapper div p {
+        font-size: 9pt;
+    }
+
+    .content #body-wrapper div i {
+        color: #c6c6c6;
+    }
+
+    .content #lvn-letter {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .content h1 {
+        font-size: 20pt;
+    }
+}

@@ -1,0 +1,129 @@
+header {
+    top: 0px !important;
+    opacity: 1 !important;
+    animation: none !important;
+}
+
+header .usable-wrapper h1.anim {
+    opacity: 1 !important;
+    animation: none !important;
+}
+
+header .usable-wrapper .right-panel div.selected {
+    opacity: 1 !important;
+    animation: none !important;
+}
+
+.navbar {
+    width: 400;
+    height: calc(100% - 60px);
+    background: #ffffff0f;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+}
+
+.navbar .nb-item {
+    display: block;
+    text-align: left;
+    height: 40px;
+    padding-left: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: none;
+
+    transition: ease 0.3s background-color;
+}
+
+.navbar .nb-item img {
+    width: 30px;
+    position: relative;
+    top: -76px;
+    left: -40px;
+}
+
+.navbar .nb-item .nbi-up {
+    position: relative;
+    top: -0;
+}
+
+.navbar .nb-item:hover {
+    background-color: #292929;
+}
+
+.navbar .nb-item span {
+    margin-right: 30px;
+    font-family: 'SFProDisplay', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    text-align: right;
+    position: relative;
+    font-style: italic;
+    top: -38px;
+}
+
+.navbar-display {
+    height: calc(100% - 80px);
+    width: calc(100% - 400px);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.navbar-display .nd-item {
+    overflow-y: auto;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    visibility: hidden;
+    padding: 50px;
+}
+
+.navbar-display .nd-title {
+    font-family: 'SFProDisplay', sans-serif;
+    font-size: 22pt;
+}
+
+.navbar-display img {
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.navbar-display a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+@media only screen and (max-width: 770px) {
+    .navbar {
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 50px;
+        z-index: 1;
+    }
+
+    .navbar-display {
+        position: unset;
+        height: 500px;
+        width: 100%;
+    }
+
+    .navbar-display .nd-item {
+        overflow-y: hidden;
+        height: unset;
+        left: 0px;
+        right: unset;
+        bottom: unset;
+    }
+}

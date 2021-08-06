@@ -1,36 +1,30 @@
 <html>
     <head>
-        <title>Liven - Other Projects</title>
+        <title>Liven - Projects</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="icon" href="assets\favicon.ico">
-        <link rel="stylesheet" href="css\main.css">
+        <link rel="stylesheet" href="css\projects.css">
+        <link rel="stylesheet" href="css\reworked_main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <script src="js/main.js"></script>
         <script src="js/otherprojects.js"></script>
     </head>
-    <body onload="randomColor()">
-        <div class="mobilemenu" id="mobilemenu">
-            <div class="mm-title">Other Projects</div><i class="fas fa-times" onclick="mobileBurger()"></i>
-            <a href="index.html" style="margin-top: 65;">Home</a>
-            <a href="jbhub.html">Jailbreak Hub</a>
-            <a href="graphicwork.html">Graphic Work</a>
-            <a href="otherprojects.html">Other Projects</a>
-        </div>
+    <body>
         <header>
-            <div class="header-frame" id="header-frame">
-                <div onclick='linkTo("index.html", "here")' class="header-logo"><div class="header-title" id="header-name">Other Projects</div></div>
-                <div class="header-right">
-                    <i class="fas fa-bars" id="h-burger" onclick="mobileBurger()"></i>
-                    <a href="otherprojects.html" id="header-buttons2">Other Projects</a>
-                    <a href="graphicwork.html" id="header-buttons1">Graphic Work</a>
-                    <a href="jbhub.html" id="header-buttons3">Jailbreak Hub</a>
-                    <a href="index.html" id="header-buttons">Home</a>
-                </div>
+            <div class="usable-wrapper">
+                <h1 class="anim" onclick="linkTo('index.html', 'here')">LVN</h1>
+                <h1 id="generator">LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN</h1>
+                <div class="right-panel"><a href="index.html"><div id="home-dot"></div>HOME</a><a href="projects.html"><div id="projects-dot"  class="selected"></div>PROJECTS</a></div>
+            </div>
+            <div class="bars-wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </header>
         <div class="navbar" id="op-navbar">
-            <div class="nb-item" id="nb-item1" onclick='otherProjectsNavbarSelect("nb-item1")' style="border-radius: 0px 10px 0px 10px;">BasicDockHider<span>iOS Tweak</span><img src="assets/projects/bdh/icon.png" /></div>
+            <div class="nb-item" id="nb-item1" onclick='otherProjectsNavbarSelect("nb-item1")'>BasicDockHider<span>iOS Tweak</span><img src="assets/projects/bdh/icon.png" /></div>
             <div class="nb-item" id="nb-item2" onclick='otherProjectsNavbarSelect("nb-item2")'>Burgar King<span>iOS Theme</span><img src="assets/projects/nologo.png" /></div>
             <div class="nb-item" id="nb-item3" onclick='otherProjectsNavbarSelect("nb-item3")'>ELB<span>Website</span><img src="assets/projects/ELB/no-reflections.png" /></div>
             <div class="nb-item" id="nb-item4" onclick='otherProjectsNavbarSelect("nb-item4")'>Emer<span>iOS Tweak</span><img src="assets/projects/nologo.png" /></div>
@@ -143,8 +137,8 @@
                 <p>Oops, I think I messed up that one, please contact me at <a id="nd-a" href="https://twitter.com/LivenOff"><i style="color: #00acee;" class="fab fa-twitter"></i> <u>@LivenOff</a></u> and tell me that I am stupid and I forgot to link a navbar item to my navbar display, Thanks!</p>
             </div>
             <div id="Select" style="position: absolute; padding: 50;">
-                <div class="nd-title">Hey there!</div>
-                <p>Please select a category, it's cold out there.</p>
+                <div class="nd-title">Welcome to my projects page</div>
+                <p>Select a category, it's cold out there.</p>
             </div>
         </div>
     </body>

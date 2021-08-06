@@ -1,66 +1,93 @@
 <html>
     <head>
-        <title>Liven - Accueil</title>
+        <title>Liven - Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="icon" href="assets\favicon.ico">
-        <link rel="stylesheet" href="css\main.css">
-        <link rel="stylesheet" href="css\index.css">
+        <link rel="stylesheet" href="css\reworked_main.css">
+        <link rel="stylesheet" href="css\reworked_index.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <script src="js/main.js"></script>
+        <script src="js/reworked_index.js"></script>
     </head>
-    <body onload="randomColor()">
-        <div class="mobilemenu" id="mobilemenu">
-            <div class="mm-title">Liven</div><i class="fas fa-times" onclick="mobileBurger()"></i>
-            <a href="index.html" style="margin-top: 65;">Home</a>
-            <a href="jbhub.html">Jailbreak Hub</a>
-            <a href="graphicwork.html">Graphic Work</a>
-            <a href="otherprojects.html">Other Projects</a>
-        </div>
+    <body>
         <header>
-            <div class="header-frame" id="header-frame">
-                <div onclick='linkTo("index.html", "here")' class="header-logo"><div class="header-title" id="header-name">Liven</div></div>
-                <div class="header-right">
-                    <i class="fas fa-bars" id="h-burger" onclick="mobileBurger()"></i>
-                    <a href="otherprojects.html" id="header-buttons2">Other Projects</a>
-                    <a href="graphicwork.html" id="header-buttons1">Graphic Work</a>
-                    <a href="jbhub.html" id="header-buttons3">Jailbreak Hub</a>
-                    <a href="index.html" id="header-buttons">Home</a>
-                </div>
+            <div class="usable-wrapper">
+                <h1 class="anim" onclick="linkTo('index.html', 'here')">LVN</h1>
+                <h1 id="generator">LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN LVN</h1>
+                <div class="right-panel"><a href="index.html"><div id="home-dot" class="selected"></div>HOME</a><a href="projects.html"><div id="projects-dot"></div>PROJECTS</a></div>
+            </div>
+            <div class="bars-wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </header>
-        <img class="ui-logo" id="ui-logo" />
-        <div class="welcome-text">
-            <div align="center">
-                <span class="wt-span">welcome!</span>
-                <div class="wt-separator"></div>
-                <div class="wt-subtitle">to my GitHub, here are some of my projects and more</div>
-                <div class="home-socialmedia" style="animation-delay: 0.7s"><a id="home-socialmedia1" href="https://twitter.com/LivenOff" target="_blank"><i class="fab fa-twitter" style="color: #1da1f2;"></i>@LivenOff</a></div>
-                <div class="home-socialmedia" style="animation-delay: 1s"><a id="home-socialmedia2" href="https://github.com/LIVENVARANE" target="_blank"><i class="fab fa-github" style="color: #24292e;"></i>LIVENVARANE</a></div>
-                <div class="home-socialmedia" style="animation-delay: 1.3s"><a id="home-socialmedia3" href="https://youtube.com/c/ElBanana" target="_blank"><i class="fab fa-youtube" style="color: #ff0000;"></i>LIVEN</a></div>
-                <div class="home-socialmedia" style="animation-delay: 1.6s"><a id="home-socialmedia4" href="https://www.reddit.com/user/LVN_N" target="_blank"><i class="fab fa-reddit" style="color: #ff4500;"></i>u/LVN_N</a></div>
-            </div>
-        </div>
-        <div class="home-block">
-            <div class="hb-container">
-                <div class="hb-left">
-                    <div align="center">
-                        <img class="hbl-titleimg" src="assets/index/whoami.png" />
-                        <p>I'm a <b><span style="color: blue;">Fr</span><span style="color: grey;">en</span><span style="color: red;">ch</span></b> 17 yo boi who mess with computers, basically. I develop on iOS (Jailbreak related stuff), I do Web (this website is made by me) but I also do Java and some C# ! Beside from coding, I’m also playing Rocket League, CS:GO, Valorant, Asseto Corsa and more :)</p>
-                        <p>This website is still in a WIP state, expect it to have some imperfections</p>
-                    </div>
-                </div>
-                <div class="hb-right">
-                    <div align="center">
-                        <img class="hbl-titleimg" src="assets/index/thoughts.png" />
-                        <img class="hbl-img" onclick='linkTo("thoughts/ultimaopensourced.html", "here")' src="assets/index/thoughts/ultimaopensourced.png" />
-                        <img class="hbl-img" onclick='linkTo("thoughts/projectsonhold.html", "here")' src="assets/index/thoughts/projectsonhold.png" />
-                        <img class="hbl-img" onclick='linkTo("thoughts/wazedecoy.html", "here")' src="assets/index/thoughts/wazedecoy.png" />
-                        <br /><br /><br />
+        <div class="content">
+            <h1 id="title">welcome to my website</h1>
+            <div id="body-wrapper" align="center">
+                <div>
+                    <p>here is my github, the place where you can see pretty much everything i'm working on. about me, i'm 17 years old, french, and i love coding. i'm mostly coding in web (full stack), as i cannot develop on iOS anymore. apart from that, i'm also developing on C# and java.</p>
+                    <p>this website just got reworked on, the old version is still being conserved <a href="old_index.html">here</a>. it can have some imperfections, as it's in a work in progress state!</p>
+                    <div class="bw" id="bw-first"></div>
+                    <div class="bw" id="bw-second"></div>
+                    <div class="bw" id="bw-third"></div>
+                    <i id="bwi-first" class="fab fa-github" onclick="linkTo('https://github.com/LIVENVARANE', 'newpage')"></i>
+                    <i id="bwi-second" class="fab fa-reddit" onclick="linkTo('https://www.reddit.com/user/LVN_N/', 'newpage')"></i>
+                    <i id="bwi-third" class="fab fa-twitter" onclick="linkTo('https://twitter.com/LivenOff', 'newpage')"></i>
+                    <div id="france-wrapper" title="baget">
+                        <div id="fr-red"></div>
+                        <div id="fr-white"></div>
+                        <div id="fr-blue"></div>
                     </div>
                 </div>
             </div>
-            
+            <div id="pinned">PINNED</div>
+            <div class="items-wrapper">
+                <div class="left" align="right">
+                    <div id="iw-first" onclick="linkTo('projects.html', 'newpage')">
+                        <img src="assets/wazedecoy.png" draggable="false" />
+                        <span>PROJECT</span>
+                        <h2>WazeDecoy</h2>
+                        <h4>Place and schedude decoys anywhere on Waze's map.</h4>
+                    </div>
+                    <div id="iw-second" onclick="linkTo('projects.html', 'newpage')">
+                        <img src="assets/music.png" draggable="false" />
+                        <span>PROJECT</span>
+                        <h2>Music</h2>
+                        <h4>An modern Apple Music client to replace the old iTunes app.</h4>
+                    </div>
+                    <div id="iw-third" onclick="linkTo('projects.html', 'newpage')">
+                        <img src="assets/projects.png" draggable="false" />
+                        <h2>All my projects</h2>
+                        <h4>If you want to take a look at everything I'm working/I worked on.</h4>
+                        <span>LINK</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div id="iw-fourth" onclick="linkTo('https://github.com/LIVENVARANE', 'newpage')">
+                        <img src="assets/github.png" draggable="false" />
+                        <span>LINK</span>
+                        <h2>My GitHub account</h2>
+                        <h4>If you want to open an issue or anything...</h4>
+                    </div>
+                    <div id="iw-fifth" onclick="linkTo('https://twitter.com/LivenOff', 'newpage')">
+                        <img src="assets/twitter.png" draggable="false" />
+                        <span>MEDIA</span>
+                        <h2>My Twitter account</h2>
+                        <h4>Want to contact me? Head to my Twitter and send me a PM!</h4>
+                    </div>
+                    <div id="iw-sixth">
+                        <img src="assets/lvn.png" draggable="false" />
+                        <span>...</span>
+                        <h2>Nothing here</h2>
+                        <h4>Check back later!</h4>
+                    </div>
+                </div>
+            </div>
+            <img onclick="linkTo('https://github.com/LIVENVARANE', 'newpage')" draggable="false" src="assets/l_letter.png" id="lvn-letter" />
+            <div id="scroll-reminder"><span>scroll to continue...</span></div>
         </div>
+        <div class="content-spacer"></div>
     </body>
 </html>

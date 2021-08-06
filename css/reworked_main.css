@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'akira_expanded';
+    src: url('../assets/fonts/akira_expanded_demo-webfont.woff2') format('woff2'),
+         url('../assets/fonts/akira_expanded_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nissan';
+    src: url('../assets/fonts/Nissan.woff2') format('woff2'),
+        url('../assets/fonts/Nissan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../assets/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../assets/fonts/SFProDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Codec Cold';
+    src: url('CodecCold-Italic.woff2') format('woff2'),
+        url('CodecCold-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #202020;
+    color: white;
+    font-family: 'Nissan', sans-serif;
+}
+
+::-webkit-scrollbar {
+    background: #151515;
+}
+
+::-webkit-scrollbar-track {
+    background: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #383838;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(82, 82, 82);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgb(141, 141, 141);
+}
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+header {
+    position: fixed;
+    left: 0px;
+    top: -20px;
+    height: 60px;
+    width: 100%;
+    opacity: 0;
+    background-color: #2d2d2d;
+    z-index: 10;
+
+    animation: header-enter 2s ease-out 1.5s forwards;
+}
+
+@keyframes header-enter {
+    0% { opacity: 0; top: -20px; }
+    100% { opacity: 1; top: 0px; }
+}
+
+header .usable-wrapper {
+    height: calc(100% - 12px);
+    line-height: 52px;
+    position: relative;
+}
+
+header .usable-wrapper h1 {
+    font-family: 'akira_expanded', sans-serif;
+    color: white;
+    margin: 0px 0px 0px 17px;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+header .usable-wrapper h1.anim {
+    opacity: 0.15;
+
+    animation: lvn-enter 0.2s ease-in 2.5s forwards;
+}
+
+@keyframes lvn-enter {
+    0% { opacity: 0.15; }
+    100% { opacity: 1; }
+}
+
+header .usable-wrapper h1#generator {
+    position: absolute;
+    top: 0px;
+    width: calc(100% - 550px);
+    height: 100%;
+    opacity: 0.15;
+    overflow: hidden;
+    cursor: default;
+    text-align: justify;
+}
+
+header .usable-wrapper .right-panel {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #2d2d2d;
+    height: 100%;
+}
+
+header .usable-wrapper .right-panel a {
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px 0px 20px;
+    overflow: visible;
+    cursor: pointer;
+    color: white;
+    font-size: 2em;
+    font-family: 'akira_expanded', sans-serif;
+    text-decoration: none;
+}
+
+header .usable-wrapper .right-panel div {
+    position: absolute;
+    left: -15px;
+    top: 19px;
+    height: 9px;
+    width: 9px;
+    background-color: #b6b6b6;
+    border-radius: 100%;
+    opacity: 0;
+    transition: 0.2s ease-out opacity;
+}
+
+header .usable-wrapper .right-panel div.selected {
+    opacity: 0;
+
+    animation: lvn-enter 0.2s ease-in 3s forwards;
+}
+
+header .usable-wrapper .right-panel a:hover div {
+    opacity: 1;
+}
+
+header .bars-wrapper div {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin-top: 3px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    header .usable-wrapper h1#generator {
+        display: none;
+    }
+
+    header .usable-wrapper .right-panel div {
+        top: 21px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header .usable-wrapper .right-panel a, header .usable-wrapper h1.anim {
+        font-size: 12pt;
+    }
+}

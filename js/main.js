@@ -63,7 +63,7 @@ function randomColor() {
 
     var path = window.location.pathname;
     var page = path.split("/").pop();
-    if(page != "otherprojects.html") {
+    if(page != "projects.html") {
         document.body.style.backgroundColor = UIColor;
     }
     else {
