@@ -3,9 +3,6 @@ function otherProjectsNavbarSelect(id) {
     if(value.includes("BasicDockHider")) {
         hideAllProjectNavbarDisplays();
         document.getElementById("BasicDockHider").style.visibility = "visible";
-    } else if(value.includes("Burgar King")) {
-        hideAllProjectNavbarDisplays();
-        document.getElementById("BurgarKing").style.visibility = "visible";
     } else if(value.includes("Emer")) {
         hideAllProjectNavbarDisplays();
         document.getElementById("Emer").style.visibility = "visible";
@@ -18,6 +15,9 @@ function otherProjectsNavbarSelect(id) {
     } else if(value.includes("LIG")) {
         hideAllProjectNavbarDisplays();
         document.getElementById("LIG").style.visibility = "visible";
+    } else if(value.includes("Music")) {
+        hideAllProjectNavbarDisplays();
+        document.getElementById("Music").style.visibility = "visible";
     } else if(value.includes("SlashSlash")) {
         hideAllProjectNavbarDisplays();
         document.getElementById("SlashSlash").style.visibility = "visible";
@@ -33,9 +33,6 @@ function otherProjectsNavbarSelect(id) {
     } else if(value.includes("WazeDecoy")) {
         hideAllProjectNavbarDisplays();
         document.getElementById("WazeDecoy").style.visibility = "visible";
-    } else if(value.includes("WhatsUp")) {
-        hideAllProjectNavbarDisplays();
-        document.getElementById("WhatsUp").style.visibility = "visible";
     } else if(value.includes("ELB")) {
         hideAllProjectNavbarDisplays();
         document.getElementById("ELB").style.visibility = "visible";
@@ -47,17 +44,16 @@ function otherProjectsNavbarSelect(id) {
 
 function hideAllProjectNavbarDisplays() {
     document.getElementById("BasicDockHider").style.visibility = "hidden";
-    document.getElementById("BurgarKing").style.visibility = "hidden";
     document.getElementById("Emer").style.visibility = "hidden";
     document.getElementById("ETHSwitcher").style.visibility = "hidden";
     document.getElementById("HapticSystem").style.visibility = "hidden";
     document.getElementById("LIG").style.visibility = "hidden";
+    document.getElementById("Music").style.visibility = "hidden";
     document.getElementById("SlashSlash").style.visibility = "hidden";
     document.getElementById("Sowy").style.visibility = "hidden";
     document.getElementById("UltimaProject").style.visibility = "hidden";
     document.getElementById("Veddy").style.visibility = "hidden";
     document.getElementById("WazeDecoy").style.visibility = "hidden";
-    document.getElementById("WhatsUp").style.visibility = "hidden";
     document.getElementById("ELB").style.visibility = "hidden";
 
     document.getElementById("Error").style.visibility = "hidden";

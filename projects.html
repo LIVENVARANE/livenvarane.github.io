@@ -6,6 +6,9 @@
         <link rel="icon" href="assets\favicon.ico">
         <link rel="stylesheet" href="css\projects.css">
         <link rel="stylesheet" href="css\reworked_main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <script src="js/main.js"></script>
         <script src="js/otherprojects.js"></script>
@@ -25,34 +28,26 @@
         </header>
         <div class="navbar" id="op-navbar">
             <div class="nb-item" id="nb-item1" onclick='otherProjectsNavbarSelect("nb-item1")'>BasicDockHider<span>iOS Tweak</span><img src="assets/projects/bdh/icon.png" /></div>
-            <div class="nb-item" id="nb-item2" onclick='otherProjectsNavbarSelect("nb-item2")'>Burgar King<span>iOS Theme</span><img src="assets/projects/nologo.png" /></div>
-            <div class="nb-item" id="nb-item3" onclick='otherProjectsNavbarSelect("nb-item3")'>ELB<span>Website</span><img src="assets/projects/ELB/no-reflections.png" /></div>
-            <div class="nb-item" id="nb-item4" onclick='otherProjectsNavbarSelect("nb-item4")'>Emer<span>iOS Tweak</span><img src="assets/projects/nologo.png" /></div>
-            <div class="nb-item" id="nb-item5" onclick='otherProjectsNavbarSelect("nb-item5")'>ETHSwitcher<span>Desktop Apps</span><img src="assets/projects/nologo.png" /></div>
-            <div class="nb-item" id="nb-item6" onclick='otherProjectsNavbarSelect("nb-item6")'>HapticSystem<span>iOS Tweak</span><img src="assets/projects/HapticSystem/icon.png" /></div>
-            <div class="nb-item" id="nb-item7" onclick='otherProjectsNavbarSelect("nb-item7")'>LIG<span>Desktop App</span><img src="assets/projects/LIG/icon.png" /></div>
-            <div class="nb-item" id="nb-item8" onclick='otherProjectsNavbarSelect("nb-item8")'>SlashSlash<span>iOS Widget</span><img src="assets/projects/SlashSlash/icon.png" /></div>
-            <div class="nb-item" id="nb-item9" onclick='otherProjectsNavbarSelect("nb-item9")'>Sowy<span>iOS Theme</span><img src="assets/projects/Sowy/icon.png" /></div>
-            <div class="nb-item" id="nb-item10" onclick='otherProjectsNavbarSelect("nb-item10")'><i>Project Ultima2</i><span>Minecraft Network</span><img src="assets/projects/Ultima/icon.png" /></div>
-            <div class="nb-item" id="nb-item11" onclick='otherProjectsNavbarSelect("nb-item11")'>Veddy<span>iOS Theme</span><img src="assets/projects/Veddy/icon.png" /></div>
-            <div class="nb-item" id="nb-item12" onclick='otherProjectsNavbarSelect("nb-item12")'>WazeDecoy<span>Program</span><img src="assets/projects/WazeDecoy/icon.png" /></div>
-            <div class="nb-item" id="nb-item13" onclick='otherProjectsNavbarSelect("nb-item13")'>WhatsUp<span>iOS Tweak</span><img src="assets/projects/WhatsUp/icon.png" /></div>
+            <div class="nb-item" id="nb-item2" onclick='otherProjectsNavbarSelect("nb-item2")'>ELB<span>Website</span><img src="assets/projects/ELB/no-reflections.png" /></div>
+            <div class="nb-item" id="nb-item3" onclick='otherProjectsNavbarSelect("nb-item3")'>Music for Windows<span>Desktop App</span><img src="assets/projects/Music/icon.png" /></div>
+            <div class="nb-item" id="nb-item4" onclick='otherProjectsNavbarSelect("nb-item4")'><i>Project Ultima2</i><span>Minecraft Network</span><img src="assets/projects/Ultima/icon.png" /></div>
+            <div class="nb-item" id="nb-item5" onclick='otherProjectsNavbarSelect("nb-item5")'>Veddy<span>iOS Theme</span><img src="assets/projects/Veddy/icon.png" /></div>
+            <div class="nb-item" id="nb-item6" onclick='otherProjectsNavbarSelect("nb-item6")'>WazeDecoy<span>Program</span><img src="assets/projects/WazeDecoy/icon.png" /></div>
+            <div class="category">SCRAPED</div>
+            <div class="nb-item" id="nb-item7" onclick='otherProjectsNavbarSelect("nb-item7")'>Emer<span>iOS Tweak</span><img src="assets/projects/nologo.png" /></div>
+            <div class="nb-item" id="nb-item8" onclick='otherProjectsNavbarSelect("nb-item8")'>ETHSwitcher<span>Desktop Apps</span><img src="assets/projects/nologo.png" /></div>
+            <div class="nb-item" id="nb-item9" onclick='otherProjectsNavbarSelect("nb-item9")'>HapticSystem<span>iOS Tweak</span><img src="assets/projects/HapticSystem/icon.png" /></div>
+            <div class="nb-item" id="nb-item10" onclick='otherProjectsNavbarSelect("nb-item10")'>LIG<span>Desktop App</span><img src="assets/projects/LIG/icon.png" /></div>
+            <div class="nb-item" id="nb-item11" onclick='otherProjectsNavbarSelect("nb-item11")'>SlashSlash<span>iOS Widget</span><img src="assets/projects/SlashSlash/icon.png" /></div>
+            <div class="nb-item" id="nb-item12" onclick='otherProjectsNavbarSelect("nb-item12")'>Sowy<span>iOS Theme</span><img src="assets/projects/Sowy/icon.png" /></div>
         </div>
         <div class="navbar-display">
             <div id="BasicDockHider" class="nd-item">
                 <div class="nd-title">BasicDockHider</div>
-                <p>It's my first tweak that really came on a repo! Of course it is not really complicated but when you need a tweak to do that, it's cool :)</p>
+                <p>It's my first tweak that really came on a repo, of course it is not really complicated but hey, you gotta start somewhere</p>
                 <p>If you did not understood by the title, this tweak is allowing users to hide their dock background or precisely its opacity.</p>
                 <p>You can get it on the Twickd repo: https://repo.twickd.com (<u><a id="nd-a" href="https://repo.twickd.com/package/com.twickd.liven.basicdockhider" target="_blank">Tweak page</a></u>)</p>
                 <img src="assets/projects/bdh/show1.jpeg" onclick='linkTo("assets/projects/bdh/show1.jpeg", "newpage")' style="border-radius: 10px; width: 280px;" /><img src="assets/projects/bdh/show2.jpeg" onclick='linkTo("assets/projects/bdh/show2.jpeg", "newpage")' style="border-radius: 10px; width: 280px;" /><img src="assets/projects/bdh/show3.jpeg" onclick='linkTo("assets/projects/bdh/show3.jpeg", "newpage")' style="border-radius: 10px; width: 280px;" />
-            </div>
-            <div id="BurgarKing" class="nd-item">
-                <div class="nd-title">Burgar King</div>
-                <p>This is a theme is never released, might (a day) rework on it and release it.</p>
-                <p>Basically, it is a theme that changes every icon to a Burger King icon with the "Burger King" text changed to the app name</p>
-                <p>It is close to be released, I only have to finish the Calendar icon (but for that I have to create a font idk for now because the day and date aren't static).</p>
-                <br />
-                <p>For now, no screenshots!</p>
             </div>
             <div id="ELB" class="nd-item">
                 <div class="nd-title">ELB's Website</div>
@@ -61,12 +56,11 @@
             </div>
             <div id="Emer" class="nd-item">
                 <div class="nd-title">Emer</div>
-                <p>Ouuu, this is <b>HOT</b>, real <b>HOT</b>, but It's a secret :) I can only tell you that it's free, and it's a <span style="font-size: 26px; font-weight: bold;">BIG BOI</span>, stay tuned!</p>
-                <p>eta s0n</p>
+                <p>This was the biggest tweak project that I ever made before I couldn't code anymore on iOS, and it was okay, I can't find any screenshots for now</p>
             </div>
             <div id="ETHSwitcher" class="nd-item">
                 <div class="nd-title">ETHSwitcher</div>
-                <p>It's a desktop app that I made on Java and C#, it's only made for my personal use BUT it's open source, so you can modify it to make it YOURS :) (The Java one has a GUI but it's not stable and the C# is only a Console/Terminal app, I started to work on a C# GUI but never finshed it because the console one is okay for me.)</p>
+                <p>It's a desktop app that I made on Java and C#, it's only made for my personal use BUT it's open source, so you can modify it to make yours (The Java one has a GUI but it's not stable and the C# is only a Console/Terminal app, I started to work on a C# GUI but never finshed it because the console one is okay for me.)</p>
                 <p>What does it do ? It's real simple but it can be useful if you have to switch between personal hotspot and your network a lot, for instance<br />It disables and enables your interfaces to make you switch from network A to network B.<br />This can be a very big app but I only made it so it responds to what I want it to do<p></p>
                 <p>Might make a configurable public version, but it would be more on C#. A <span style="font-weight: bold; font-size: 26px;">BIG</span> hot one.</p>
                 <img src="assets/projects/ETHSwitcher/cs-console.png" onclick='linkTo("assets/projects/ETHSwitcher/cs-console.png", "newpage")' style="width: 65%; -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43);" /><img src="assets/projects/ETHSwitcher/java.png" onclick='linkTo("assets/projects/ETHSwitcher/java.png", "newpage")' style="-webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); width: 400;" />
@@ -74,31 +68,38 @@
             <div id="HapticSystem" class="nd-item">
                 <div class="nd-title">HapticSystem</div>
                 <p>I will never release this one on a big repo, why ? Just found out that it has already been made. Check <a id="nd-a" target="_blank" href="https://repo.litten.love/depictions/rse/">Litten's Rose tweak</a> on her repo: https://repo.litten.love</p>
-                <p>Everything was made so I can release it s0n but no, I even made a video about it! (It's an old build but <u><a id="nd-a" target="_blank" href="https://www.youtube.com/watch?v=OATO0LIHHHg">here it is!</a></u>), if you still want it: Yes! I will give you the .deb, just ask me on <a id="nd-a" href="https://twitter.com/LivenOff"><i style="color: #00acee;" class="fab fa-twitter"></i> <u>@LivenOff</a></u> !</p>
+                <p>Everything was made so I can release it s0n but no, anyway if you still want it: you can, I can give you the .deb, just ask me on <a id="nd-a" href="https://twitter.com/LivenOff"><i style="color: #00acee;" class="fab fa-twitter"></i> <u>@LivenOff</a></u> !</p>
                 <img src="assets/projects/HapticSystem/show1.png" onclick='linkTo("assets/projects/HapticSystem/show1.png", "newpage")' style="margin-right: 40; border-radius: 10px; width: 280px;" /><img src="assets/projects/HapticSystem/show2.png" onclick='linkTo("assets/projects/HapticSystem/show2.png", "newpage")' style="margin-right: 40; border-radius: 10px; width: 280px;" /><img src="assets/projects/HapticSystem/show3.png" onclick='linkTo("assets/projects/HapticSystem/show3.png", "newpage")' style="border-radius: 10px; width: 280px;" />
             </div>
             <div id="LIG" class="nd-item">
                 <div class="nd-title">LIG</div>
                 <p>or Liven Icon Generator, should be more Resizer but <u>it is what it is</u></p>
-                <p>It's a Java app that was made to simplify iOS icon resizing, with LIG, you can resize your icons to @3x, @2x, ~ipad etc<br />For now the project is on hold but I will soon restart working on it to add customizable resolution for custom prefixes etc</p>
-                <p>That way you can rename potato.png (512px) into potatoLITTLE (128px) & potatoCATCEN.png (400px) if you want, even if it's stupid.</p>
+                <p>It's a Java app that was made to simplify iOS icon resizing, with LIG, you can resize your icons to @3x, @2x, ~ipad etc<br />This project is scraped</p>
+                <p>That way you can rename potato.png (512px) into potatoLITTLE (128px) & potatoCATCEN.png (400px)</p>
                 <img src="assets/projects/LIG/show.jpg" onclick='linkTo("assets/projects/LIG/show.jpg", "newpage")' style="width: 400;" />
+            </div>
+            <div id="Music" class="nd-item">
+                <div class="nd-title">Music for Windows</div>
+                <img src="assets/projects/Music/app.png" onclick='linkTo("assets/projects/Music/app.png", "newpage")' style="border-radius: 10px; max-width: 85%;" />
+                <p>This is one of my biggest projects, so basically, iTunes for Windows is a complete mess, and the music.apple.com is awfully slow. This is why I started an Apple Music app for Windows, it's still WIP, I have to finish the connection system (almost the only thing I need to do before releasing a beta or something) because now you have to manually enter your tokens.</p>
+                <p>(And it has dark mode, yes)</p>
             </div>
             <div id="SlashSlash" class="nd-item">
                 <div class="nd-title">SlashSlash</div>
                 <p>SlashSlash is my first iOS widget (for XenHTML), it is a lockscreen clock & date widget.</p>
                 <p>It does not require XenInfo and is customizable (as you can see in the screenshots below).</p>
+                <p>This project is scraped, but it works, just compile it: <a id="nd-a">https://github.com/LIVENVARANE/SlashSlash</a></p>
                 <img src="assets/projects/SlashSlash/show1.png" onclick='linkTo("assets/projects/SlashSlash/show1.png", "newpage")' style="margin-right: 40; border-radius: 10px; width: 280px;" /><img src="assets/projects/SlashSlash/settings.png" onclick='linkTo("assets/projects/SlashSlash/settings.png", "newpage")' style="margin-right: 40; border-radius: 10px; width: 280px;" />
             </div>
             <div id="Sowy" class="nd-item">
                 <div class="nd-title">Sowy</div>
-                <p>Sowy is my first real iOS theme project, its a "calligraphy-style" theme, icons are made with a specific brush.<br />As I'm not really satisfied of every icon I made, it's not released yet.</p>
-                <p>Below is the only icons that I revealed. There are my base icons for the theme (becauses it's the icons I'm the most satisfied of.)</p>
+                <p>Sowy is my first real iOS theme project, its a "calligraphy-style" theme, icons are made with a specific brush.<br />I only made some icons, and guess what, this project is scraped</p>
+                <p>Below is the only icons that I ever revealed. There are my base icons for the theme (becauses it's the icons I'm the most satisfied of.)</p>
                 <img src="assets/projects/Sowy/show1.jpeg" onclick='linkTo("assets/projects/Sowy/show1.jpeg", "newpage")' style="border-radius: 10px; width: 500px; -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43);" />
             </div>
             <div id="UltimaProject" class="nd-item">
                 <div class="nd-title">Project Ultima2</div>
-                <p>Ouh, this one's a big one.</p>
+                <p>This one is a big one.</p>
                 <p>It all started in the end of 2017, me and some friends started making a Minecraft Server (as every kid at this time). It was a cheap server but I started doing every games in Skript (A simplified Minecraft coding language).<br />The server was based on the Rush minigame that is played (and still played now) by 50-60% of the French MC community (way more skilled than your bedwars and shit lol). And after almost a year, it closed because I wasn't playing MC anymore.</p>
                 <img src="assets/projects/Ultima/show1.png" onclick='linkTo("assets/projects/Ultima/show1.png", "newpage")' style="margin-right: 40; border-radius: 10px; width: 500px;" /><img src="assets/projects/Ultima/show2.png" onclick='linkTo("assets/projects/Ultima/show2.png", "newpage")' style="border-radius: 10px; width: 500px;" />
                 <div class="nd-title" style="margin-top: 50;">Ultima2 - Restarting from Zero</div>
@@ -112,33 +113,29 @@
                 <li>Minecraft server : 80%</li>
                 <li>Minecraft webhooks and JSONAPI : 100%</li>
                 <img src="assets/projects/Ultima/pluglist.png" onclick='linkTo("assets/projects/Ultima/pluglist.png", "newpage")' style="border-radius: 10px; width: 180; -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43);" />
-                <p>Even if this never made it out, this is the project I'm the most proud of :)</p>
                 <p><b>EDIT: My contributions on this project are now open source! -> <a id="nd-a" href="thoughts/ultimaopensourced.html">Click here</a></b></p>
             </div>
             <div id="Veddy" class="nd-item">
                 <div class="nd-title">Veddy</div>
-                <p>This theme is releasing soon, almmmost done... It has a dark version too!</p>
+                <p>This theme was supposed to be released, but I never did it for some reason. It is 99% done, and if you want to use it, just tell me on Twitter: <a id="nd-a" href="https://twitter.com/LivenOff"><i style="color: #00acee;" class="fab fa-twitter"></i> <u>@LivenOff</a></u>, and I will eventually get motivated to finally release it</p>
                 <img src="assets/projects/Veddy/show1.png" onclick='linkTo("assets/projects/Veddy/show1.png", "newpage")' style="border-radius: 10px; width: 65%; -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43);" />
             </div>
             <div id="WazeDecoy" class="nd-item">
                 <div class="nd-title">WazeDecoy</div>
-                <p>This is a C# program that, yes, place decoys on Waze! With that I place police around my house so people "slow down", at the beggining it was quite a joke but it turned into a reality</p>
+                <p>PROJECT UPDATE: I will eventually release a GUI version of WazeDecoy, with that you will be able to place any decoy anywhere.</p>
+                <p>This is a C# program that, yes, place decoys on Waze. With that I place police around my house so people "slow down", at the beggining it was quite a joke but it turned into a reality</p>
                 <p>To achieve that, I used Charles Proxy to intercept Waze requests with its Protobuf API (www.rtproxy.waze) and I basically copied the login commands and the decoy placing command. No API token or anything, and I can also place decoy everywhere I want and create virtual traffic jams without being there!</p>
                 <p>I also saw that you can login into an account really easily by seeing the request (and you can do whatever you want with it).</p>
                 <img src="assets/projects/WazeDecoy/show1.png" onclick='linkTo("assets/projects/WazeDecoy/show1.png", "newpage")' style="width: 65%; -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43);" />
                 <p>And I installed the program on a Raspberry Pi Zero W (Raspbian Buster installed) to make it run 24/7! (It's still C#, I used <a id="nd-a" href="https://www.mono-project.com/" target="_blank">Mono</a> to make it work on Raspbian.)</p>
             </div>
-            <div id="WhatsUp" class="nd-item">
-                <div class="nd-title">WhatsUp</div>
-                <p>This page hasn't been made yet, check back later!</p>
-            </div>
             <div id="Error" class="nd-item">
                 <div class="nd-title">Error</div>
-                <p>Oops, I think I messed up that one, please contact me at <a id="nd-a" href="https://twitter.com/LivenOff"><i style="color: #00acee;" class="fab fa-twitter"></i> <u>@LivenOff</a></u> and tell me that I am stupid and I forgot to link a navbar item to my navbar display, Thanks!</p>
+                <p>An error happened. Please contact me on Twitter so fix that: <a id="nd-a" href="https://twitter.com/LivenOff"><i style="color: #00acee;" class="fab fa-twitter"></i> <u>@LivenOff</a></u></p>
             </div>
             <div id="Select" style="position: absolute; padding: 50;">
                 <div class="nd-title">Welcome to my projects page</div>
-                <p>Select a category, it's cold out there.</p>
+                <p>Please select a category, it's cold out there.</p>
             </div>
         </div>
     </body>

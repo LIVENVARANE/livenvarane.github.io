@@ -7,15 +7,6 @@
 }
 
 @font-face {
-    font-family: 'Nissan';
-    src: url('../assets/fonts/Nissan.woff2') format('woff2'),
-        url('../assets/fonts/Nissan.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'SFProDisplay';
     src: url('../assets/fonts/SFProDisplay-Bold.woff2') format('woff2'),
         url('../assets/fonts/SFProDisplay-Bold.woff') format('woff');
@@ -38,7 +29,7 @@ html, body {
     margin: 0px;
     background-color: #202020;
     color: white;
-    font-family: 'Nissan', sans-serif;
+    font-family: 'Syne', sans-serif;
 }
 
 ::-webkit-scrollbar {

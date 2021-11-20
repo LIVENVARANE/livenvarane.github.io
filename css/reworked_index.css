@@ -3,7 +3,7 @@ html, body {
     margin: 0px;
     background-color: black !important;
     color: white;
-    font-family: 'Nissan', sans-serif;
+    font-family: 'Syne', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -74,6 +74,7 @@ header .usable-wrapper .right-panel a {
 
 .content #body-wrapper div p {
     text-align: justify;
+    line-height: 20px;
     color: #c6c6c6;
     margin: 0px 0px 15px 0px;
 }
