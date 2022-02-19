@@ -30,10 +30,10 @@
             <div class="nb-item" id="nb-item1" onclick='otherProjectsNavbarSelect("nb-item1")'>BasicDockHider<span>iOS Tweak</span><img src="assets/projects/bdh/icon.png" /></div>
             <div class="nb-item" id="nb-item2" onclick='otherProjectsNavbarSelect("nb-item2")'>ELB<span>Website</span><img src="assets/projects/ELB/no-reflections.png" /></div>
             <div class="nb-item" id="nb-item3" onclick='otherProjectsNavbarSelect("nb-item3")'>Music for Windows<span>Desktop App</span><img src="assets/projects/Music/icon.png" /></div>
-            <div class="nb-item" id="nb-item4" onclick='otherProjectsNavbarSelect("nb-item4")'><i>Project Ultima2</i><span>Minecraft Network</span><img src="assets/projects/Ultima/icon.png" /></div>
-            <div class="nb-item" id="nb-item5" onclick='otherProjectsNavbarSelect("nb-item5")'>Veddy<span>iOS Theme</span><img src="assets/projects/Veddy/icon.png" /></div>
-            <div class="nb-item" id="nb-item6" onclick='otherProjectsNavbarSelect("nb-item6")'>WazeDecoy<span>Program</span><img src="assets/projects/WazeDecoy/icon.png" /></div>
+            <div class="nb-item" id="nb-item4" onclick='otherProjectsNavbarSelect("nb-item4")'>WazeDecoy<span>Program</span><img src="assets/projects/WazeDecoy/icon.png" /></div>
             <div class="category">SCRAPED</div>
+            <div class="nb-item" id="nb-item5" onclick='otherProjectsNavbarSelect("nb-item5")'><i>Project Ultima2</i><span>Minecraft Network</span><img src="assets/projects/Ultima/icon.png" /></div>
+            <div class="nb-item" id="nb-item6" onclick='otherProjectsNavbarSelect("nb-item6")'>Veddy<span>iOS Theme</span><img src="assets/projects/Veddy/icon.png" /></div>
             <div class="nb-item" id="nb-item7" onclick='otherProjectsNavbarSelect("nb-item7")'>Emer<span>iOS Tweak</span><img src="assets/projects/nologo.png" /></div>
             <div class="nb-item" id="nb-item8" onclick='otherProjectsNavbarSelect("nb-item8")'>ETHSwitcher<span>Desktop Apps</span><img src="assets/projects/nologo.png" /></div>
             <div class="nb-item" id="nb-item9" onclick='otherProjectsNavbarSelect("nb-item9")'>HapticSystem<span>iOS Tweak</span><img src="assets/projects/HapticSystem/icon.png" /></div>
@@ -124,10 +124,10 @@
                 <div class="nd-title">WazeDecoy</div>
                 <p>PROJECT UPDATE: I will eventually release a GUI version of WazeDecoy, with that you will be able to place any decoy anywhere.</p>
                 <p>This is a C# program that, yes, place decoys on Waze. With that I place police around my house so people "slow down", at the beggining it was quite a joke but it turned into a reality</p>
-                <p>To achieve that, I used Charles Proxy to intercept Waze requests with its Protobuf API (www.rtproxy.waze) and I basically copied the login commands and the decoy placing command. No API token or anything, and I can also place decoy everywhere I want and create virtual traffic jams without being there!</p>
-                <p>I also saw that you can login into an account really easily by seeing the request (and you can do whatever you want with it).</p>
+                <p>To achieve that, I used web proxy software to intercept Waze requests with its Protobuf API (www.rtproxy.waze) and I basically copied the login commands and the decoy placing command. No API token or anything, and I can also place decoy everywhere I want and create virtual traffic jams without being there.</p>
+                <p>This flaw is really powerfull and can lead to false informations in the app, or just by totally flooding the Waze map by fake reports.</p>
                 <img src="assets/projects/WazeDecoy/show1.png" onclick='linkTo("assets/projects/WazeDecoy/show1.png", "newpage")' style="width: 65%; -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43); box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.43);" />
-                <p>And I installed the program on a Raspberry Pi Zero W (Raspbian Buster installed) to make it run 24/7! (It's still C#, I used <a id="nd-a" href="https://www.mono-project.com/" target="_blank">Mono</a> to make it work on Raspbian.)</p>
+                <p>And I installed the program on a Raspberry Pi Zero (on raspbian buster) to make it run 24/7. (It's still C#, I used <a id="nd-a" href="https://www.mono-project.com/" target="_blank">Mono</a> to run it on Raspbian.)</p>
             </div>
             <div id="Error" class="nd-item">
                 <div class="nd-title">Error</div>
