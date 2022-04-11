@@ -1,4 +1,6 @@
-function otherProjectsNavbarSelect(id) {
+function otherProjectsNavbarSelect(id) { //Yes this is awful I did it two years ago and I'm not proud (and I probably never were)
+    if(document.getElementById(id) === null) throw 'NotFoundProjectItemError: The item specified was not found';
+
     var value = document.getElementById(id).innerHTML;
     if(value.includes("BasicDockHider")) {
         hideAllProjectNavbarDisplays();
@@ -36,6 +38,15 @@ function otherProjectsNavbarSelect(id) {
     } else if(value.includes("ELB")) {
         hideAllProjectNavbarDisplays();
         document.getElementById("ELB").style.visibility = "visible";
+    } else if(value.includes("EDBruteForce")) {
+        hideAllProjectNavbarDisplays();
+        document.getElementById("EDBruteForce").style.visibility = "visible";
+    } else if(value.includes("RLTrader")) {
+        hideAllProjectNavbarDisplays();
+        document.getElementById("RLTrader").style.visibility = "visible";
+    } else if(value.includes("DisquePlatine")) {
+        hideAllProjectNavbarDisplays();
+        document.getElementById("DisquePlatine").style.visibility = "visible";
     } else {
         hideAllProjectNavbarDisplays();
         document.getElementById("Error").style.visibility = "visible";
@@ -43,19 +54,17 @@ function otherProjectsNavbarSelect(id) {
 }
 
 function hideAllProjectNavbarDisplays() {
-    document.getElementById("BasicDockHider").style.visibility = "hidden";
-    document.getElementById("Emer").style.visibility = "hidden";
-    document.getElementById("ETHSwitcher").style.visibility = "hidden";
-    document.getElementById("HapticSystem").style.visibility = "hidden";
-    document.getElementById("LIG").style.visibility = "hidden";
-    document.getElementById("Music").style.visibility = "hidden";
-    document.getElementById("SlashSlash").style.visibility = "hidden";
-    document.getElementById("Sowy").style.visibility = "hidden";
-    document.getElementById("UltimaProject").style.visibility = "hidden";
-    document.getElementById("Veddy").style.visibility = "hidden";
-    document.getElementById("WazeDecoy").style.visibility = "hidden";
-    document.getElementById("ELB").style.visibility = "hidden";
+    document.querySelectorAll('.nd-item').forEach(function(item) {
+        item.style.visibility = "hidden";
+    });
 
-    document.getElementById("Error").style.visibility = "hidden";
     document.getElementById("Select").style.visibility = "hidden";
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if(urlParams.has('goto')) {
+        otherProjectsNavbarSelect(urlParams.get('goto'));
+    }
+});

@@ -18,6 +18,7 @@ document.addEventListener('scroll', function() {
     const fourthItem = document.getElementById('iw-fourth');
     const fifthItem = document.getElementById('iw-fifth');
     const sixthItem = document.getElementById('iw-sixth');
+    const scrollReminder = document.getElementById('scroll-reminder');
     const lvnLetter = document.getElementById('lvn-letter');
 
     //console.log(window.scrollY);
@@ -191,9 +192,11 @@ document.addEventListener('scroll', function() {
                 sixthItem.style.cursor = 'pointer';
 
                 lvnLetter.style.opacity = 0;
+                scrollReminder.classList.remove('hide');
             } else {
                 sixthItem.style.transform = 'rotate3D(0, 0, 0, 0deg)';
 
+                scrollReminder.classList.add('hide');
                 lvnLetter.style.opacity = 0.2;
             }
         }

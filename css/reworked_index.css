@@ -120,7 +120,7 @@ header .usable-wrapper .right-panel a {
     transform: translateX(-10px);
     opacity: 0;
     cursor: pointer;
-    color: black;
+    color: #838383;
     font-size: 14pt;
     transition: 0.2s ease-out top;
 }
@@ -309,11 +309,16 @@ header .usable-wrapper .right-panel a {
     left: 0px;
     width: 100%;
     text-align: center;
-    font-family: 'Codec Cold', sans-serif;
-    color: rgb(59, 59, 59);
     opacity: 0;
 
     animation: scroll-enter 1s ease-out 4s forwards;
+}
+
+.content #scroll-reminder img {
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 1px;
 }
 
 .content #scroll-reminder.hide {
@@ -321,7 +326,7 @@ header .usable-wrapper .right-panel a {
 }
 
 @keyframes scroll-enter {
-    100% { opacity: 1; bottom: 50px; }
+    100% { opacity: .4; bottom: 50px; }
 }
 
 .content-spacer {
