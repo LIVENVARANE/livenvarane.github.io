@@ -26,7 +26,7 @@ function otherProjectsNavbarSelect(id) { //Yes this is awful I did it two years 
     } else if(value.includes("Sowy")) {
         hideAllProjectNavbarDisplays();
         document.getElementById("Sowy").style.visibility = "visible";
-    } else if(value.includes("<i>Project Ultima2</i>")) {
+    } else if(value.includes("Project Ultima2")) {
         hideAllProjectNavbarDisplays();
         document.getElementById("UltimaProject").style.visibility = "visible";
     } else if(value.includes("Veddy")) {
@@ -54,11 +54,9 @@ function otherProjectsNavbarSelect(id) { //Yes this is awful I did it two years 
 }
 
 function hideAllProjectNavbarDisplays() {
-    document.querySelectorAll('.nd-item').forEach(function(item) {
+    document.querySelector('.navbar-display').querySelectorAll('div').forEach(function(item) {
         item.style.visibility = "hidden";
     });
-
-    document.getElementById("Select").style.visibility = "hidden";
 }
 
 document.addEventListener('DOMContentLoaded', function() {

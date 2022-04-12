@@ -15,32 +15,31 @@ header .usable-wrapper .right-panel div.selected {
 }
 
 .navbar {
-    width: 400;
-    height: calc(100% - 60px);
-    background: #ffffff0f;
     position: absolute;
     top: 60px;
     left: 0px;
+    width: 400;
+    height: calc(100% - 60px);
+    background: #ffffff0f;
 }
 
-.navbar .nb-item {
+.navbar div {
     display: block;
+    position: relative;
     text-align: left;
     height: 40px;
-    padding-left: 45px;
+    padding-left: 50px;
     font-family: 'SFProDisplay', sans-serif;
     font-weight: bold;
     line-height: 40px;
     font-size: 20px;
     font-weight: 400;
-    margin-left: 5px;
     cursor: pointer;
-    background-color: none;
 
-    transition: ease 0.3s background-color;
+    transition: ease-out .3s background-color;
 }
 
-.navbar .category {
+.navbar h4 {
     font-family: 'akira_expanded', sans-serif;
     margin: 0px 0px 2px 10px;
     padding-top: 20px;
@@ -49,57 +48,64 @@ header .usable-wrapper .right-panel div.selected {
     user-select: none;
 }
 
-.navbar .nb-item img {
+.navbar div img {
+    position: absolute;
+    top: 5px;
+    left: 10px;
     width: 30px;
-    position: relative;
-    top: -76px;
-    left: -40px;
+    transition: .2s ease-out;
 }
 
-.navbar .nb-item .nbi-up {
-    position: relative;
-    top: -0;
-}
-
-.navbar .nb-item:hover {
+.navbar div:hover {
     background-color: #292929;
 }
 
-.navbar .nb-item span {
-    margin-right: 30px;
+.navbar div:hover img {
+    transform: rotate(-3deg);
+}
+
+.navbar div:active {
+    background-color: #1d1d1d; 
+}
+
+.navbar div:active img {
+    transform: rotate(-3deg) scale(.8);
+}
+
+.navbar div span {
+    position: absolute;
+    top: 0px;
+    right: 20px;
     font-family: 'SFProDisplay', sans-serif;
     font-weight: lighter;
     font-size: 16px;
     color: gray;
-    display: block;
-    text-align: right;
-    position: relative;
     font-style: italic;
-    top: -38px;
 }
 
 .navbar-display {
-    height: calc(100% - 80px);
+    height: calc(100% - 60px);
     width: calc(100% - 400px);
     position: absolute;
     right: 0px;
-    bottom: 0px;
+    top: 60px;
 }
 
-.navbar-display .nd-item {
-    overflow-y: auto;
-    height: calc(100% - 100px);
-    width: calc(100% - 100px);
+.navbar-display div {
     position: absolute;
     right: 0px;
     bottom: 0px;
     visibility: hidden;
     padding: 50px;
+    overflow-y: auto;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
 }
 
-.navbar-display .nd-title {
+.navbar-display h1 {
     font-family: 'SFProDisplay', sans-serif;
     font-size: 32pt;
+    margin: 0px;
 }
 
 .navbar-display img {
@@ -110,7 +116,33 @@ header .usable-wrapper .right-panel div.selected {
 
 .navbar-display a {
     text-decoration: underline;
-    color: inherit;
+    color: white;
+    border-radius: 2px;
+}
+
+.navbar-display a:hover {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-display a:active {
+    background-color: rgb(194, 194, 194);
+}
+
+.navbar-display #Select {
+    visibility: visible;
+    height: calc(100% - 130px);
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    padding: 130px 0px 0px 0px;
+}
+
+.navbar-display #Select h1, .navbar-display #Select p {
+    text-align: center;
+    margin: 0px;
 }
 
 @media only screen and (max-width: 770px) {
@@ -128,7 +160,7 @@ header .usable-wrapper .right-panel div.selected {
         width: 100%;
     }
 
-    .navbar-display .nd-item {
+    .navbar-display div, .navbar-display #Select {
         overflow-y: hidden;
         height: unset;
         left: 0px;
