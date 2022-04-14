@@ -338,40 +338,47 @@ header .usable-wrapper .right-panel a {
     ::-webkit-scrollbar {
         display: none;
     }
-    
+
     .content .items-wrapper {
-        height: 100%;
-        overflow-y: auto;
+        width: calc(100% - 40px);
+        left: 20px;
     }
 
     .content .items-wrapper div {
-        width: 100%;
-        padding: 0px !important;
-    }
-
-    .content .items-wrapper div.left {
-        float: unset;
-        height: unset;
+        width: calc(50% - 10px);
     }
 
     .content .items-wrapper div.right {
-        float: unset;
+        padding-left: 0px;
     }
 
-    .content .items-wrapper div div {
-        max-width: unset;
+    .content .items-wrapper div.left {
+        padding-right: 0px;
+    }
+
+    .content .items-wrapper div div img {
+        left: 5px;
+        top: 26px;
+        height: 40px;
+        width: 40px;
     }
 
     .content .items-wrapper div div h2 {
-        font-size: 10pt;
-    }
-
-    .content .items-wrapper div div span {
-        font-size: 7pt;
+        font-size: 14pt;
+        left: 50px;
+        width: calc(100% - 60px);
     }
 
     .content .items-wrapper div div h4 {
-        font-size: 7pt;
+        right: unset;
+        left: 50px;
+        font-size: 10pt;
+        width: calc(100% - 65px);
+        height: 60px;
+    }
+
+    .content .items-wrapper div div span {
+        font-size: 8pt;
     }
 
     .content #body-wrapper div {
